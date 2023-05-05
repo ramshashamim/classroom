@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registeration-Wedding planner</title>
+    <link rel="stylesheet" href="./css/registeration.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+     <!-- banner section start  -->
+     <section class="banner">
+       <header id="header">
+            <!-- <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul> -->
+            <div class="logo">
+           <a href="home.html">   <img src="images/logo.png"></a>  
+            </div>
+            <!-- ul>
+                <li><a href="service.html">Service</a>
+                    <ul class="dropdown">
+                        <li><a href="makeup.html">MakeUp</a></li>
+                        <li><a href="decoration.html">Decoration</a></li>
+                        <li><a href="">Photographer</a></li>
+                        <<li><a href="">Catering</a></li>
+                    </ul></li>
+                
+                <li><a href="registeration.html">Registeration</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul> -->
+        </header>
+
+        <div class="registeration-main" id="form1">
+<div class="content">
+   <div class="heading1" id="title" > <h1> LOGIN </h1></div>
+   <div class="input" id="input_field">
+
+    <!-- <input type="text" id="name" placeholder=" NAME"> -->
+
+    <input type="email"  id="name" placeholder="EMAIL">
+
+    <input type="password" id="name" placeholder="PASSWORD">
+   </div>
+
+</div>
+
+<div class="content2">
+    <h4>
+        LOST PASSWORD  <a href="">click here!</a>
+    </h4>
+</div>
+
+<div class="login-buttons">
+<button id="loginbtn">
+<a href="#">Login </a> 
+</button>
+
+<button id="signinbtn" onclick="showform2()">
+    <a href="#">Sign In</a>
+    </button>
+</div>
+<div class="icons">
+    <!-- Facebook -->
+<a href=""> <i class="fa fa-facebook-official" style="font-size:26px ;color:rgb(49, 107, 233)"></i></a> 
+    <!-- Dribbble -->
+    <a href="">  <i class="fa fa-google-plus" style="font-size:26px; margin-left: 10px; color:rgb(221, 53, 53)" ></i></a> 
+    <!-- Twitter -->
+    <a href="">   <i class="fa fa-instagram" style="font-size:26px ; margin-left: 10px; color:rgb(167, 28, 93)"></i></a> 
+    <!-- Google + -->
+    <a href="">    <i class="fa fa-whatsapp" style="font-size:26px ; margin-left: 10px; ;color:rgb(44, 119, 15)"></i></a> 
+    <!-- Linkedin -->
+  </div>
+        </div>
+
+
+
+
+        <div class="registeration-main " id="form2">
+            <div class="content">
+               <div class="heading1" id="title" > <h1> SIGNIN </h1></div>
+               <div class="input" id="input_field">
+            
+                <input type="text" id="name" placeholder="FIRST NAME">
+                <input type="text" id="name" placeholder=" LAST NAME">
+            
+                <input type="email" id="name" placeholder="EMAIL">
+            
+                <input type="password" id="name" placeholder="PASSWORD">
+               </div>
+            
+            </div>
+            
+          
+            
+            <div class="login-buttons">
+            <button id="loginbtn " onclick="showform1()">
+            <a href="#">Login </a> 
+            </button>
+            
+            <button id="signinbtn">
+                <a href="#">Sign In</a>
+                </button>
+            </div>
+            
+                    </div>
+</section>
+
+
+
+ <script>
+
+function showform2()
+{
+    document.getElementById("form2").style.display= "initial"
+    document.getElementById("form1").style.display= "none"
+}
+
+function showform1()
+{
+    document.getElementById("form1").style.display= "initial"
+    document.getElementById("form2").style.display= "none"
+}
+
+
+
+ </script>
+       
+</body>
+</html>
